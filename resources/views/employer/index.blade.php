@@ -1,41 +1,25 @@
 @extends('layouts.main')
 @section('content')
-    <div class="page-banner-brd" style="background-image: url({{ asset('data/2.jpg') }});">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="padding-left: 10px; padding-right: 10px;">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="inner-brd-text text-center">
-                        <h1>
-                            Employer Form
-                        </h1>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">
-                                    Employer Form
-                                </li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{ route('home') }}">
+                        <i class="icon-home text-white"></i>
+                    </a>
+                </li>
 
-        <span class="banner-frame-one"></span>
-        <span class="banner-frame-two"></span>
-        <span class="banner-frame-three"></span>
-        <span class="banner-frame-four"></span>
-        <div class="shape-top-left" data-aos="fade-right" data-aos-delay="500"></div>
-        <div class="shape-bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="1500">
+                <li class="breadcrumb-item active text-white" aria-current="page">
+                    Employer Form
+                </li>
+            </ol>
         </div>
-    </div>
+    </nav>
 
 
     <div class="page-content">
         <div class="container">
-
             <div class="row">
-
                 <div class="col-xl-4 col-lg-4 col-sm-4 py-5">
                     <iframe width="100%" height="250" src="https://www.youtube.com/embed/aIQvj-l5W2s"
                         title="YouTube video player" frameborder="0"
@@ -66,25 +50,23 @@
                 </div>
 
                 <div class="col-xl-8 col-lg-8 col-sm-8 py-5">
-                    <div class="contact-form">
-
+                    <div class="contact-form" style="background-color: #a0dea7; padding: 20px;">
                         <div class="column mcb-column mcb-item-04q251sx2 one column_column">
                             <div class="column_attr clearfix align_center animate fadeInUp" data-anim-type="fadeInUp"
                                 style="background-image:url({{ asset('data/home_elearning_sep.png') }});background-repeat:no-repeat;background-position:center bottom;">
                                 <strong>
-
                                     <h2>Employer <span class="color3">Form</span></h2>
-
                                     <h3 style="color:#00CE55;">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">
-                                                We help employees transition quickly and
+                                                Post a job
+
                                             </font>
                                         </font>
                                         <span style="color:#f7931E;">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">
-                                                    successfully into new jobs and career opportunities.
+                                                    and hire talent worker.
                                                 </font>
                                             </font>
                                         </span>
@@ -92,12 +74,11 @@
                                 </strong>
                             </div>
                         </div>
-
                         <br>
                         <form autocomplete="off" method="POST" action="{{ route('employer.store') }}" id="create-form">
                             @csrf
                             <div class="row">
-                                <div class="col-md-12 mb-4">
+                                <div class="col-md-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Name</label>
                                         <input autocomplete="off" type="text"
@@ -112,7 +93,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Type of Company</label>
                                         <input autocomplete="off" type="text"
@@ -127,12 +108,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Email Address</label>
                                         <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                            placeholder="Company Email Address" name="email"
-                                            value="{{ old('email') }}">
+                                            placeholder="Company Email Address" name="email" value="{{ old('email') }}">
                                         @error('email')
                                             <div class="help-block with-errors text-danger">
                                                 {{ $message }}
@@ -141,7 +121,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Phone Number</label>
                                         <input autocomplete="off" type="text"
@@ -156,7 +136,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Website</label>
                                         <input autocomplete="off" type="text"
@@ -170,7 +150,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12 mb-4">
+                                <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Location</label>
                                         <input autocomplete="off" type="text"
@@ -185,7 +165,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Job Category</label>
                                         <input autocomplete="off" type="text"
@@ -200,7 +180,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Age Limit: 20-40</label>
                                         <input autocomplete="off" type="text"
@@ -216,7 +196,7 @@
                                 </div>
 
 
-                                <div class="col-xl-12 col-md-12 col-lg-12 col-sm-12 mb-4">
+                                <div class="col-xl-12 col-md-12 col-lg-12 col-sm-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Educational
                                             Requirement</label>
@@ -230,7 +210,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">
                                             Working Experience Requirement
@@ -245,7 +225,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Other Additional
                                             Requirement</label>
@@ -259,7 +239,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Estimate Salary Offer</label>
                                         <input autocomplete="off" type="text"
@@ -275,7 +255,7 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Other Allowance</label>
                                         <input autocomplete="off" type="text"
@@ -291,7 +271,7 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Gender: Male = 10, Female =
                                             5</label>
@@ -308,7 +288,7 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-4">
+                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Interview Type</label>
                                         <input autocomplete="off" type="text"
@@ -337,7 +317,6 @@
         </div>
     </div>
 @endsection
-
 @section('script')
     {!! JsValidator::formRequest('App\Http\Requests\StoreEmployer', '#create-form') !!}
 @endsection

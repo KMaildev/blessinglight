@@ -1,152 +1,142 @@
-<footer id="footWrapper">
-    <div class="footer-top">
-        <div class="container">
-            <p class="lg-txt f-left">
-                Our Main Goal is to Create New Design Trends For Your Next Website, It is <span
-                    class="main-color heavy">BOOKRA</span> All You Need.
-            </p>
-            <a class="f-right btn uppercase main-gradient skew-btn" href="#"><span>Buy Now</span></a>
-        </div>
-    </div>
-
+<footer class="footer bg-dark position-relative">
     <div class="footer-middle">
-        <div class="container">
+        <div class="container position-static">
+            <div class="footer-ribbon bg-primary text-white ls-0">
+                Get in touch
+            </div>
+            <!-- End .footer-ribbon -->
             <div class="row">
-
-                <div class="col-md-3 first">
-                    <h3>About us</h3>
-                    <p class="foot-about-par">
-                        BOOKRA template is a big library of pre-designed web elements which help you create
-                        website in few minutes. Each and every design element was designed for retina ready
-                        display on all kind of devices.
-                    </p>
-                    <div class="social-list half-icons">
-                        <a href="#"><i class="fa fa-dribbble ic-dribbble ic-colored sm-icon"></i><span>follow
-                                us</span></a>
-                        <a href="#"><i
-                                class="fa fa-facebook ic-facebook ic-colored sm-icon sm-icon"></i><span>Like
-                                us</span></a>
-                        <a href="#"><i class="fa fa-linkedin ic-linkedin ic-colored sm-icon"></i><span>follow
-                                us</span></a>
-                        <a href="#"><i class="fa fa-google-plus ic-gplus ic-colored sm-icon"></i><span>plus 1
-                                us</span></a>
-                        <a href="#"><i class="fa fa-twitter ic-twitter ic-colored sm-icon"></i><span>follow
-                                us</span></a>
-                        <a href="#"><i class="fa fa-youtube ic-youtube ic-colored sm-icon"></i><span>follow
-                                us</span></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <h3>Latest News</h3>
-                    <div class="recent-posts-footer">
-                        <ul>
+                <div class="col-lg-3 col-md-4">
+                    <div class="widget">
+                        <h4 class="widget-title font-weight-bold">Contact Info</h4>
+                        <ul class="contact-info">
                             <li>
-                                <div class="widget-post-info">
-                                    <h4>
-                                        <a href="blog-single.html">
-                                            We Offer Unlimited Design Elements To Get Started
-                                        </a>
-                                    </h4>
-                                    <div class="meta">
-                                        <span>Dec 28, 2013,</span>
-                                    </div>
-                                </div>
+                                <span class="contact-info-label">Address:</span>123 Street Name, City, England
                             </li>
                             <li>
-                                <div class="widget-post-info">
-                                    <h4>
-                                        <a href="blog-single.html">
-                                            A Clean Website Gives More Experience To The Visitors
-                                        </a>
-                                    </h4>
-                                    <div class="meta">
-                                        <span>Dec 28, 2013,</span>
-                                    </div>
-                                </div>
+                                <span class="contact-info-label">Phone:</span><a href="tel:">(123)
+                                    456-7890</a>
                             </li>
                             <li>
-                                <div class="widget-post-info">
-                                    <h4>
-                                        <a href="blog-single.html">
-                                            How You Can Impact Your Customers With Great Design
-                                        </a>
-                                    </h4>
-                                    <div class="meta">
-                                        <span>Dec 28, 2013,</span>
-                                    </div>
-                                </div>
+                                <span class="contact-info-label">Email:</span> <a
+                                    href="https://portotheme.com/cdn-cgi/l/email-protection#7d101c14113d18051c100d1118531e1210"><span
+                                        class="__cf_email__"
+                                        data-cfemail="e38e828a8fa3869b828e938f86cd808c8e">[email&#160;protected]</span></a>
+                            </li>
+                            <li>
+                                <span class="contact-info-label">Working Days/Hours:</span> Mon - Sun / 9:00 AM
+                                - 8:00 PM
                             </li>
                         </ul>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon social-facebook icon-facebook" target="_blank"
+                                title="Facebook"></a>
+                            <a href="#" class="social-icon social-twitter icon-twitter" target="_blank"
+                                title="Twitter"></a>
+                            <a href="#" class="social-icon social-linkedin fab fa-linkedin-in" target="_blank"
+                                title="Linkedin"></a>
+                        </div>
+                        <!-- End .social-icons -->
                     </div>
+                    <!-- End .widget -->
                 </div>
+                <!-- End .col-lg-3 -->
 
-                <div class="col-md-3 widget_it_widget_tweets">
-                    <h3>Twitter Feed</h3>
-                    <div class="tweet">
-                        <a class="twitter-timeline" href="https://twitter.com/IT__RAYS"></a>
-                        <script async src="../../platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="col-lg-9 col-md-8">
+                    <div class="widget widget-newsletter">
+                        <h4 class="widget-title">Subscribe newsletter</h4>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12 mb-1">
+                                <p class="mb-0">Get all the latest information on Events, Sales and Offers.
+                                    Sign up for newsletter today.</p>
+                            </div>
+                            <!-- End .col-lg-6 -->
+
+                            <div class="col-lg-6 col-md-12 mb-1">
+                                <form action="#" class="d-flex mb-0 w-100">
+                                    <input type="email" class="form-control mb-0" placeholder="Email Address"
+                                        required>
+
+                                    <input type="submit" class="btn btn-primary shadow-none" value="Subscribe">
+                                </form>
+                            </div>
+                            <!-- End .col-lg-6 -->
+                        </div>
+                        <!-- End .row -->
                     </div>
-                </div>
+                    <!-- End .widget -->
 
-                <div class="col-md-3 last contact-widget">
-                    <h3>Contact Us</h3>
-                    <p class="foot-about-par">
-                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque.
-                    </p>
-                    <ul class="details">
-                        <li><i class="fa fa-map-marker"></i><span>123 Street Name, City, Country.</span></li>
-                        <li><i class="fa fa-envelope"></i><span>e-mail@company.com</span></li>
-                        <li><i class="fa fa-phone"></i><span>+1(888)000-0000</span></li>
-                    </ul>
-                    <div class="foot-newletters">
-                        <form
-                            action="http://it-rays.us9.list-manage.com/subscribe/post-json?u=8ff98fda7c9727d2b65a45ac2&amp;id=29d0e843d7&amp;c=?"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            target="_blank" novalidate class="boo-nl">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="widget">
+                                <h4 class="widget-title mb-1">Customer Service</h4>
 
-                            <label>Subscribe to our NewsLetters:</label>
+                                <div class="links link-parts row">
+                                    <ul class="link-part col-lg-6 col-md-12 mb-0">
+                                        <li><a href="demo2-about.html">About us</a></li>
+                                        <li><a href="demo2-contact.html">Contact us</a></li>
+                                        <li><a href="login.html">My account</a></li>
+                                    </ul>
+                                    <ul class="link-part col-lg-6 col-md-12">
+                                        <li><a href="#">Order history</a></li>
+                                        <li><a href="#">Advanced search</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .widget -->
+                        </div>
+                        <!-- End .col-sm-6 -->
 
-                            <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL"
-                                placeholder="Enter your email here" required />
+                        <div class="col-sm-7">
+                            <div class="widget">
+                                <h4 class="widget-title mb-1">About Us</h4>
 
-                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn main-bg"
-                                value="Send" />
-
-                            <div class="hidden"><input type="text" name="b_8ff98fda7c9727d2b65a45ac2_29d0e843d7"
-                                    value=""></div>
-
-                            <div class="nl-note"><span></span></div>
-
-                        </form>
+                                <div class="links link-parts row">
+                                    <ul class="link-part col-lg-6 col-md-12 mb-0">
+                                        <li><a href="#">Super Fast Html Template</a></li>
+                                        <li><a href="#">1st Fully working Ajax Theme</a></li>
+                                        <li><a href="#">36 Unique Shop Layouts</a></li>
+                                    </ul>
+                                    <ul class="link-part col-lg-6 col-md-12">
+                                        <li><a href="#">Powerful Admin Panel</a></li>
+                                        <li><a href="#">Mobile & Retina Optimized</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .widget -->
+                        </div>
+                        <!-- End .col-sm-6 -->
                     </div>
+                    <!-- End .row -->
                 </div>
+                <!-- End .col-lg-9 -->
+            </div>
+            <!-- End .row -->
+        </div>
+        <!-- End .container -->
+    </div>
+    <!-- End .footer-middle -->
+
+    <div class="container">
+        <div class="footer-bottom d-sm-flex align-items-center">
+            <div class="footer-left">
+                <span class="footer-copyright">© Porto eCommerce. 2021. All Rights Reserved</span>
             </div>
 
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <!-- footer copyrights left cell -->
-                <div class="copyrights col-md-5">© Copyrights <b class="main-color">BOOKRA</b> 2016. All
-                    rights reserved.</div>
-
-                <!-- footer bottom menu start -->
-                <div class="col-md-7 last">
-                    <ul class="footer-menu f-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+            <div class="footer-right ml-auto mt-1 mt-sm-0">
+                <div class="payment-icons mr-0">
+                    <span class="payment-icon visa"
+                        style="background-image: url(assets/images/payments/payment-visa.svg)"></span>
+                    <span class="payment-icon paypal"
+                        style="background-image: url(assets/images/payments/payment-paypal.svg)"></span>
+                    <span class="payment-icon stripe"
+                        style="background-image: url(assets/images/payments/payment-stripe.png)"></span>
+                    <span class="payment-icon verisign"
+                        style="background-image:  url(assets/images/payments/payment-verisign.svg)"></span>
                 </div>
-                <!-- footer bottom menu end -->
-
             </div>
         </div>
     </div>
+    <!-- End .footer-bottom -->
 </footer>

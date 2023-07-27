@@ -1,97 +1,46 @@
 @extends('layouts.main')
+@section('title', 'Contact Us')
 @section('content')
-    <br>
-    <div class="pageContent">
-        <div class="white-bg fullscreen-contact main-border" style="margin-top: 0px;">
-            <div class="page-title">
-                <div class="container">
-                    <h1>Contact Us</h1>
-                    <h3>
-                        Send us a message and we' ll respond as soon as possible
-                    </h3>
-                </div>
-            </div>
-            <div class="breadcrumbs">
-                <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav"
+        style="padding-left: 10px; padding-right: 10px;">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
                     <a href="{{ route('home') }}">
-                        Home
+                        <i class="icon-home text-white"></i>
                     </a>
-                    <i class="fa fa-long-arrow-right main-color"></i>
-                    <a href="javascript::void(0)">
-                        Contact Us
-                    </a>
+                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">
+                    Contact Us
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container contact-us-container">
+        <div class="contact-info">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="ls-n-25 m-b-1">
+                        Interested in discussing?
+                    </h2>
+                    <p style="text-align: justify; color: black;">
+                        If you have any questions about our services or would like more information about our overseas
+                        employment agency, please do not hesitate to get in touch. We are available by phone, email, or
+                        through our contact form on our website. Our friendly team of experts are always happy to answer any
+                        questions or queries you may have.
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <div class="inner-contact">
-                <div class="heading main centered">
-                    <h3 class="uppercase lg-title">
-                        <span class="main-color"> Interested in </span> discussing?
-                    </h3>
-                    <p>
-                        Alternatively, you may contact us by filling up the contact form. Our team will response you
-                        shortly.
-                    </p>
-                </div>
-
-                <div class="p-b-3">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="white-bg lg-box t-center light-gry-border rect-angles">
-                                    <i class="fa fa-map-marker main-color lg-icon"></i>
-                                    <h4>Address</h4>
-                                    <p style="text-align: justify">
-                                        No.29, U Chit Maung Road, Sayar San (South) Quarter,
-                                        Bahan Township, Yangon, Myanmar.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="white-bg lg-box t-center light-gry-border rect-angles">
-                                    <i class="fa fa-phone-square main-color lg-icon"></i>
-                                    <h4>Phone</h4>
-                                    <p>
-                                        Phone: 09 789 755 722<br>
-                                        Mobile: 09 789 755 733<br>
-                                        <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="white-bg lg-box t-center light-gry-border rect-angles">
-                                    <i class="fa fa-envelope main-color lg-icon"></i>
-                                    <h4>E-mail Address</h4>
-                                    <p>
-                                        blessinglight83@gmail.com<br>
-                                        info@blessinglight.com
-                                        <br><br>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sm-padding">
-                    <hr class="dev-style4" />
-                </div>
-
-
-                <div class="heading main centered">
-                    <h3 class="uppercase lg-title">
-                        <span class="main-color"> Have A </span> Question?
-                    </h3>
-                    <p>
-                        If you have any queries about recruitments, vacancies, or anything else, our team is ready to
-                        response all your queries.
-                    </p>
-                </div>
-
-
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mt-6 mb-2">Send Us a Message</h2>
+                <p style="color: black; font-weight: bold;">
+                    If you have any queries about recruitments, vacancies, or anything else, our team is ready to
+                    response all your queries.
+                </p>
                 <form class="cons-contact-form" method="post" action="{{ route('contact.store') }}" autocomplete="off"
                     id="create-form">
                     @csrf
@@ -127,25 +76,90 @@
                         </div>
 
                         <div class="col-lg-12 mb-3">
-                            <button class="btn main-bg btn-block btn-lg btn-3d uppercase" type="submit" id="contact-submit"
-                                name="contact-submit" value="submit">Send Message</button>
+                            <button type="submit" class="btn btn-dark font-weight-normal">
+                                Send Message
+                            </button>
                         </div>
                     </div>
                 </form>
 
-                <br>
-                
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.1651521401195!2d96.16340217418889!3d16.81816108397518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed1f80bc32eb%3A0xc8615906c6f9ef16!2sBlessing%20Light%20Oversea%20Employment%20Agency!5e0!3m2!1sen!2smm!4v1690352182302!5m2!1sen!2smm"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
             </div>
 
+            <div class="col-lg-4 contact-info">
+                <h2 class="mt-6 mb-1">
+                    Let Us Know How We Can Help You
+                </h2>
+                <p>
+                    Alternatively, you may contact us by filling up the contact form. Our team will response you
+                    shortly.
+                </p>
+                <style>
+                    .contact-box {
+                        background: rgb(69, 180, 58);
+                        background: linear-gradient(90deg, rgba(69, 180, 58, 1) 0%, rgba(139, 76, 47, 1) 51%, rgba(253, 29, 29, 1) 100%, rgba(230, 211, 36, 1) 100%);
+                    }
+                </style>
+                <div class="col-sm-12 col-lg-12 contact-box py-5"
+                    style="height: 190px; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+                    <div class="feature-box text-center">
+                        <i class="fa fa-map text-white"></i>
+                        <div class="feature-box-content">
+                            <h3 class="text-white">Address</h3>
+                            <h5 class="text-white">
+                                No.29, U Chit Maung Road, Sayar San (South) Quarter,
+                                Bahan Township, Yangon, Myanmar.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-12 contact-box py-5"
+                    style="height: 190px; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+                    <div class="feature-box text-center">
+                        <i class="fa fa-mobile-alt text-white"></i>
+                        <div class="feature-box-content">
+                            <h3 class="text-white">Phone Number</h3>
+                            <h5 class="text-white">
+                                09 789 755 722<br>
+                                09 789 755 733<br>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-12 contact-box py-5"
+                    style="height: 190px; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+                    <div class="feature-box text-center">
+                        <i class="far fa-envelope text-white"></i>
+                        <div class="feature-box-content">
+                            <h3 class="text-white">E-mail Address</h3>
+                            <h5 class="text-white">
+                                blessinglight83@gmail.com<br>
+                                info@blessinglight.com
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-12 contact-box py-5"
+                    style="height: 190px; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+                    <div class="feature-box text-center">
+                        <i class="far fa-calendar-alt text-white"></i>
+                        <div class="feature-box-content">
+                            <h3 class="text-white">Working Days/Hours</h3>
+                            <h5 class="text-white">Mon - Sun / 9:00AM - 8:00PM</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br><br><br>
     </div>
+
+    <div class="mb-8"></div>
 @endsection
 @section('script')
     {!! JsValidator::formRequest('App\Http\Requests\StoreContact', '#create-form') !!}

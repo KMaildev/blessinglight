@@ -28,8 +28,8 @@ class AppServiceProvider extends ServiceProvider
         $categories = Category::all();
         view()->share('categories', $categories);
 
-
-        $countries = Country::all();
+        // $countries = Country::all();
+        $countries = Country::withCount('job')->get();
         view()->share('countries', $countries);
     }
 }
