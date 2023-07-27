@@ -196,6 +196,61 @@
         </div>
     </div>
 
+    <section class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title ">
+                        <h3 style="color:#00CE55;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">
+                                    Company Information
+                                </font>
+                            </font>
+                        </h3>
+                        <h3>
+                            <span style="color:#f7931E;">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Company Registration Certificate
+                                    </font>
+                                </font>
+                            </span>
+                        </h3>
+
+                        <div class="title-desc">
+                            <p style="text-align: justify; font-size: 15px; color: black;">
+                                Choose us for your overseas employment needs and embark on a rewarding international career
+                                journey. Our agency offers a wealth of experience and expertise, ensuring smooth transitions
+                                and successful placements. With a wide range of job options across various sectors and
+                                countries, personalized support, and a commitment to excellence, we prioritize your success
+                                and build lasting relationships with our clients. Trust us to make your overseas job
+                                aspirations a reality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12" style="padding: 14px;">
+                    <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
+                        <img src="{{ asset('data/1.png') }}" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: 340px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                            class="img-enlargeable">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12" style="padding: 14px;">
+                    <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
+                        <img src="{{ asset('data/2.png') }}" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: 340px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                            class="img-enlargeable">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
     <section class="promo-section bg-dark" data-parallax="{'speed': 2, 'enableOnMobile': true}"
         data-image-src="{{ asset('data/company_bg.jpg') }}">
@@ -234,7 +289,179 @@
         </div>
     </section>
 
-    <br>
-    <br>
-    <br>
+    <section class="feature-boxes-container py-5">
+        <div class="container appear-animate" data-animation-name="fadeInUpShorter">
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <h3 style="color:#00CE55;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">
+                                    Our Vision, Mission & Value
+                                </font>
+                            </font>
+                        </h3>
+                    </center>
+                </div>
+                <style>
+                    .feature-box-simple1 {
+                        padding: 10px;
+                        background: rgb(226, 56, 18);
+                        background: linear-gradient(315deg, rgba(226, 56, 18, 1) 0%, rgba(15, 68, 213, 0.31976540616246496) 49%, rgba(19, 38, 235, 1) 100%);
+                    }
+
+                    .feature-box-simple2 {
+                        padding: 10px;
+                        background: rgb(34, 193, 195);
+                        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(73, 167, 170, 1) 0%, rgba(222, 108, 8, 1) 100%);
+                    }
+
+                    .feature-box-simple3 {
+                        padding: 10px;
+                        background: rgb(148, 136, 27);
+                        background: linear-gradient(90deg, rgba(148, 136, 27, 1) 0%, rgba(27, 148, 47, 1) 52%, rgba(2, 21, 71, 1) 100%, rgba(253, 29, 29, 1) 100%);
+                    }
+                </style>
+                <div class="col-md-4">
+                    <div class="feature-box px-sm-5 feature-box-simple text-center feature-box-simple1">
+                        <div class="feature-box-icon">
+                            <i class="icon-earphones-alt"></i>
+                        </div>
+
+                        <div class="feature-box-content p-0">
+                            <h3>
+                                Our Mission
+                            </h3>
+                            <p style="text-align: justify; color: black;">
+                                Our vision is to be a leading overseas employment company, connecting talented
+                                individuals with rewarding job opportunities worldwide. We aim to empower job
+                                seekers and contribute to the growth and development of businesses in need of
+                                skilled and dedicated professionals.
+                            </p>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box px-sm-5 feature-box-simple text-center feature-box-simple2">
+                        <div class="feature-box-icon">
+                            <i class="icon-credit-card"></i>
+                        </div>
+
+                        <div class="feature-box-content p-0">
+                            <h3>Our Vission</h3>
+                            <p style="text-align: justify; color: black;">
+                                Our mission is to provide exceptional overseas employment services by offering a
+                                comprehensive range of solutions to both job seekers and employers. We strive to
+                                match the right candidates with the right opportunities, fostering mutual success
+                                and long-term partnerships. Through our dedication to ethical practices and
+                                personalized support, we aim to make a positive impact on the lives of individuals
+                                and the organizations we serve.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box px-sm-5 feature-box-simple text-center feature-box-simple3">
+                        <div class="feature-box-icon">
+                            <i class="icon-action-undo"></i>
+                        </div>
+                        <div class="feature-box-content p-0">
+                            <h3>Our Value</h3>
+                            <ul class="list-icons">
+                                <li style="text-align: justify; color: black;">
+                                    Excellence - We strive for excellence in every aspect of our services,
+                                    aiming to
+                                    exceed expectations.
+                                </li>
+                                <li style="text-align: justify; color: black;">
+                                    Respect - We value and respect the diverse backgrounds and perspectives of
+                                    all
+                                    individuals we work with.
+                                </li>
+                                <li style="text-align: justify; color: black;">
+                                    Collaboration - We foster strong partnerships, working together to achieve
+                                    mutual success.
+                                </li>
+                                <li style="text-align: justify; color: black;">
+                                    Responsiveness - We are responsive to the needs of our clients, providing
+                                    timely
+                                    solutions and support.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="section-title ">
+                        <h3 style="color:#00CE55;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">
+                                    Company
+                                </font>
+                            </font>
+                            <span style="color:#f7931E;">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Organizational Chart
+                                    </font>
+                                </font>
+                            </span>
+                        </h3>
+
+                        <div class="title-desc">
+                            <p style="text-align: justify; font-size: 15px; color: black;">
+                                Our overseas employment agency consists of a skilled team dedicated to connecting talented
+                                individuals with international job opportunities. We have a deep understanding of global
+                                markets, immigration laws, and visa processes. Our extensive network of contacts allows us
+                                to offer a wide range of employment opportunities in various sectors. We prioritize
+                                transparency, ethical practices, and open communication, providing personalized guidance and
+                                support to job seekers. Our commitment to excellence ensures successful placements and
+                                long-term relationships with clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12" style="padding: 14px;">
+                    <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
+                        <img src="https://hkkservices.com/data/org.png" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: 340px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                            class="img-enlargeable">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container" style="background-color: #F4F4F4;">
+        <div class="row justify-content-center py-3">
+            <div class="col-lg-12 col-12" align="center">
+                <h4><b>Our Purpose</b></h4>
+                <p style="font-size: 16px; color: black;">Our main purpose is to provide different categories of Myanmar Manpower around the globe and
+                    especially
+                    Thailand. We supply Skilled, Semi-Skilled, General Worker, Technical, Professional and
+                    Unskilled Myanmar
+                    Manpower. Currently, we are dealing with various clients from different countries and
+                    successful in supply
+                    Malaysia, Japan, Thailand, Singapore without any complaints.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
 @endsection
