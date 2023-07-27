@@ -1,393 +1,240 @@
 @extends('layouts.main')
 @section('content')
-    <div class="page-banner-brd" style="background-image: url({{ asset('data/about_bg.png') }});">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="padding-left: 10px; padding-right: 10px;">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="inner-brd-text text-center">
-                        <h1>
-                            <br>
-                        </h1>
-                        <br><br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{ route('home') }}">
+                        <i class="icon-home text-white"></i>
+                    </a>
+                </li>
 
-        <span class="banner-frame-one"></span>
-        <span class="banner-frame-two"></span>
-        <span class="banner-frame-three"></span>
-        <span class="banner-frame-four"></span>
-        <div class="shape-top-left" data-aos="fade-right" data-aos-delay="500"></div>
-        <div class="shape-bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="1500">
+                <li class="breadcrumb-item active text-white" aria-current="page">
+                    About Us
+                </li>
+
+                <li class="breadcrumb-item active text-white" aria-current="page">
+                    Our Company
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <img style="width: 100%;" src="https://yunnadioocompany.com/data/about_1.png" data-aos="fade-down"
+                    class="img1" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h3 style="color:#00CE55;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Blessing
+                        </font>
+                    </font>
+                    <span style="color:#f7931E;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                Light Services Co.,Ltd
+                            </font>
+                        </font>
+                    </span>
+                </h3>
+
+                <h4>
+                    Overseas Employment Agency
+                </h4>
+
+
+                <p style="text-align: justify; font-size: 16px; color: black;">
+                    Our company "Blessing Light Services Co.,Ltd." was established in the year 2020 for the manpower supply.
+                    Blessing Light Service Co.,Ltd is one of the registered licence companies in Republic of the Union of
+                    Myanmar and authorized by the Ministry of the National Planning & Economic Development and Ministry of
+                    Labor, Employment & Social Welfare. We specialize in the supply of manpower to overseas countries.
+                    <br><br>
+                    "Blessing Light Services Co.,Ltd." has been in this manpower recruitment services for many years and we
+                    are proud and modest to inform that we have had substantial success in the supply of labor in the
+                    different business sectors.
+
+                    <br><br>
+                    We arrange enrollment for Singapore, Malaysia and Thailand.
+                    And, we are fully accredited member of Myanmar Overseas Employment Agencies
+                    Federation (MOEAF).
+                    <br><br>
+                    "Blessing Light Services Co.,Ltd." always welcome for your manpower needs and "Blessing Light Services
+                    Co.,Ltd." will provide our best services as your reliable agency.
+                </p>
+            </div>
+
+            <div class="col-md-12">
+                <style>
+                    .table {
+                        border-collapse: collapse;
+                        border: 1px solid black;
+                        width: 100%;
+                    }
+
+                    th,
+                    td {
+                        border: 1px solid black;
+                    }
+                </style>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td style="color:black; background-color:#003201; color: white; width: 20%;">
+                                Name of Company
+                            </td>
+
+                            <td style="color:black;">
+                                Blessing Light Services Co.,Ltd.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black;">
+                                Nature of Business
+                            </td>
+
+                            <td style="color:black;">
+                                Services, Recruitment, Manpower supply
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black; background-color:#003201; color: white;">
+                                Nationality of Company
+                            </td>
+
+                            <td style="color:black;">
+                                - Local Myanmar
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black;">
+                                Company Registration
+                            </td>
+
+                            <td style="color:black;">
+                                Directorate of Investment and Comapny Administration
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black; background-color:#003201; color: white;">
+                                Registration No.
+                            </td>
+
+                            <td style="color:black;">
+                                118376935
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black;">
+                                Licence Approval
+                            </td>
+
+                            <td style="color:black;">
+                                - Ministry of Labor in Myanmar
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black; background-color:#003201; color: white;">
+                                Overseas Employment Licence No.
+                            </td>
+
+                            <td style="color:black;">
+                                82/2021
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black;">
+                                Office Location
+                            </td>
+
+                            <td style="color:black;">
+                                No.29, U Chit Maung Road, Sayar San (South) Quarter, Bahan Township, Yangon, Myanmar.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black; background-color:#003201; color: white;">
+                                Office Phone No.
+                            </td>
+
+                            <td style="color:black;">
+                                <a href="tel:+959 789 755 722">
+                                    +959 789 755 722
+                                </a>,
+                                <a href="tel:+959 789 755 722">
+                                    +959 789 755 722
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color:black;">
+                                Mail Address
+                            </td>
+
+                            <td style="color:black;">
+                                <a href="mailto:blessinglight83@gmail.com">
+                                    blessinglight83@gmail.com
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
-    <!--about ortency start-->
-    <section class="about-ortency-v1 px-120">
-        <div class="container">
-            <div class="row gy-5 align-items-center">
-                <div class="col-md-6">
-                    <div class="inner">
-                        <img style="width: 100%;" src="{{ asset('data/about_1.png') }}" data-aos="fade-down" class="img1"
-                            alt="">
-                    </div>
+
+    <section class="promo-section bg-dark" data-parallax="{'speed': 2, 'enableOnMobile': true}"
+        data-image-src="{{ asset('data/company_bg.jpg') }}">
+        <div class="promo-banner banner container text-uppercase">
+            <div class="banner-content row align-items-center text-center">
+                <div class="col-md-4 ml-xl-auto text-md-right appear-animate" data-animation-name="fadeInRightShorter"
+                    data-animation-delay="600">
+                    <h2 class="mb-md-0 text-white">
+                        Blessing Light Services Co.,Ltd
+                    </h2>
                 </div>
-                <div class="col-md-6">
-                    <div class="right-content-about">
-                        <div class="sec-title">
-                            <h3>
-                                <img src="{{ asset('assets/img/icons/title-icon.svg') }}" alt="">
-                                About Our Company
-                            </h3>
-                            <h2 class="tag1">
-                                Yun Nadi Oo Co.,Ltd
-                            </h2>
-                        </div>
-                        <p style="text-align: justify">
-                            YUN NADI OO (OVERSEAS MYANMAR MANPOWER EMPLOYMENT AGENCY) has been successfully recruiting for
-                            and supplying companies, factories and businesses, especially for Thailand, Japan, Malaysia,
-                            Singapore and Middle East Countries. We retain a term of skilled recruitment professionals who
-                            uphold our reputation by providing effective and efficient recruitment services for our
-                            customer’s satisfaction.
-                            <br><br>
-                            We have got New Special Recruitment License for Thailand since 2012 under the company act of
-                            Government of Myanmar.
-                        </p>
-                        <ul class="list-icons ">
-                            <li style="width: 100%;">
-                                <span>
-                                    Expert guidance:
-                                </span>
-                                Overseas Employment Service Agencies provide expert guidance for finding
-                                jobs abroad.
-                            </li>
-                            <li style="width: 100%;">
-                                <span>
-                                    Job connections:
-                                </span>
-                                They have extensive networks with employers, enhancing your job prospects.
-                            </li>
-                            <li style="width: 100%;">
-                                <span>
-                                    Streamlined process:
-                                </span>
-                                These agencies simplify the application process, making it easier for
-                                you to navigate visas, documentation, and interviews.
-                            </li>
-                        </ul>
-                        <a href="{{ route('contact.index') }}" class="btn btn-default">
-                            Contact Us
-                        </a>
-                    </div>
-                    <!--/.right-content-about-->
+                <div class="col-md-4 col-xl-3 pb-4 pb-md-0 appear-animate" data-animation-name="fadeIn"
+                    data-animation-delay="300">
+                    <a href="{{ route('contact.index') }}" class="btn btn-dark btn-black ls-10">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="col-md-4 mr-xl-auto text-md-left appear-animate" data-animation-name="fadeInLeftShorter"
+                    data-animation-delay="600">
+                    <h4 class="mb-1 mt-1 font1 coupon-sale-text p-0 d-block ls-n-10 text-transform-none">
+                        <b>
+                            Overseas Employment Agency
+                        </b>
+                    </h4>
+                    <h5 class="mb-1 coupon-sale-text text-white ls-10 p-0">
+                        <i class="ls-0 text-black">
+                            BSL
+                        </i>
+                        <b class="text-white bg-secondary ls-n-10">
+                            Licence No. 068/2023
+                        </b>
+                    </h5>
                 </div>
             </div>
         </div>
     </section>
-    <!--about ortency end-->
 
-
-    <div class="how-work-v3 bg-image px-120">
-        <div class="container">
-            <div class="row g-0 align-items-center d-flex justify-content-center">
-                <div class="col-12">
-                    <div class="sec-title text-center mb-50">
-                        <h3>
-                            <img src="{{ asset('assets/img/icons/title-icon.svg') }}" alt="">
-                            SERVICES
-                        </h3>
-                        <h1>
-                            Where our services
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="col-9 col-md-9 col-lg-9">
-                    <p>
-                        ”Yun Nadi Oo”, a leading Manpower Recruiting Agency based in Myanmar, licensed and authorized by the
-                        Ministry of Labor, Employment and Social Security of Myanmar. We are the outstanding supplier of
-                        quality manpower to different parts of the world.
-                    </p>
-                </div>
-                <div class="col-12">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-xl-4">
-                            <div class="how-work-inner-v3 white" data-aos="flip-down" data-aos-delay="100">
-                                <span class="number">01</span>
-                                <div class="d-sm-flex">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="{{ asset('assets/img/icons/work-pr1.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2>
-                                            Our Operations
-                                        </h2>
-                                        <p style="text-align: justify">
-                                            Yun Nadi Oo’s operations are managed by a team of professionals who have decades
-                                            of experience in the areas of recruiting, selecting, giving language training,
-                                            and testing of skilled and semi-skilled candidates.
-                                        </p>
-                                        <br><br><br><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-xl-4">
-                            <div class="how-work-inner-v3 white" data-aos="flip-down" data-aos-delay="300">
-                                <span class="number">02</span>
-                                <div class="d-sm-flex">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="{{ asset('assets/img/icons/work-pr2.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2>Our Expertise</h2>
-                                        <p style="text-align: justify">
-                                            Our expertise stands on the Thailand, Malaysia, Singapore, Japan and Middle East
-                                            Countries job market, providing high standard recruitment service to the
-                                            companies in various industries.
-                                        </p>
-                                        <br><br><br><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-xl-4">
-                            <div class="how-work-inner-v3 white" data-aos="flip-down" data-aos-delay="500">
-                                <span class="number">03</span>
-                                <div class="d-sm-flex">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="{{ asset('assets/img/icons/work-pr3.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2>
-                                            Our Experience
-                                        </h2>
-                                        <p style="text-align: justify; line-height: 1.5em;">
-                                            Our recruitment experience allows us to provide employees at various levels for
-                                            a wide range of job categories, including construction, food factories, bakery,
-                                            hospitality, supermarkets, warehouses, garment & textile factories, agriculture,
-                                            mechanical jobs, and more, as per our clients' needs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/.container-->
-    </div>
-
-    <!--reason to success start-->
-    <div class="reason-to_success-sec px-120">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="left-images-rsn">
-                        <img src="{{ asset('data/about1.jpg') }}" class="rsn1" alt="" style="width: 370px;">
-                        <img src="{{ asset('data/about_bg.png') }}" class="rsn2" alt="" style="width: 370px;">
-                        <img src="{{ asset('data/mmmap.png') }}" class="rsn3" alt="" style="width: 300px;">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sec-title">
-                        <h3>
-                            <img src="{{ asset('assets/img/icons/title-icon-infinity.svg') }}" alt="">
-                            Reason of Our Success
-                        </h3>
-                        <h2 class="tag1">
-                            Our Vision, Mission & Value
-                        </h2>
-                    </div>
-
-                    <div class="success-tabs-about">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#our_mission_id"
-                                    type="button" role="tab" aria-controls="our_mission_id" aria-selected="true">
-                                    Our Mission
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#our_vission_id"
-                                    type="button" role="tab" aria-controls="our_vission_id"
-                                    aria-selected="false">Our Vission</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#our_history_id"
-                                    type="button" role="tab" aria-controls="our_history_id"
-                                    aria-selected="false">Our Value</button>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="our_mission_id" role="tabpanel"
-                                aria-labelledby="our_mission_id">
-                                <div class="inner-tbs-success">
-                                    <p style="text-align: justify">
-                                        Our vision is to be a leading overseas employment company, connecting talented
-                                        individuals with rewarding job opportunities worldwide. We aim to empower job
-                                        seekers and contribute to the growth and development of businesses in need of
-                                        skilled and dedicated professionals.
-                                    </p>
-                                    <div class="d-sm-flex align-items-center">
-                                        <img src="{{ asset('assets/img/worldMap.png') }}" alt="">
-                                        <ul class="list-icons">
-                                            <li>
-                                                Expert guidance: Overseas Employment Service Agencies provide expert
-                                                guidance for finding jobs abroad.
-                                            </li>
-                                            <li>
-                                                Job connections: They have extensive networks with employers, enhancing your
-                                                job prospects.
-                                            </li>
-                                            <li>
-                                                Streamlined process: These agencies simplify the application process, making
-                                                it easier for you to navigate visas, documentation, and interviews.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="our_vission_id" role="tabpanel"
-                                aria-labelledby="our_vission_id">
-                                <div class="inner-tbs-success">
-                                    <p style="text-align: justify">
-                                        Our mission is to provide exceptional overseas employment services by offering a
-                                        comprehensive range of solutions to both job seekers and employers. We strive to
-                                        match the right candidates with the right opportunities, fostering mutual success
-                                        and long-term partnerships. Through our dedication to ethical practices and
-                                        personalized support, we aim to make a positive impact on the lives of individuals
-                                        and the organizations we serve.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="our_history_id" role="tabpanel"
-                                aria-labelledby="our_history_id">
-                                <div class="inner-tbs-success">
-                                    <div class="d-sm-flex align-items-center">
-                                        <ul class="list-icons">
-                                            <li>
-                                                Excellence - We strive for excellence in every aspect of our services,
-                                                aiming to
-                                                exceed expectations.
-                                            </li>
-                                            <li>
-                                                Respect - We value and respect the diverse backgrounds and perspectives of
-                                                all
-                                                individuals we work with.
-                                            </li>
-                                            <li>
-                                                Collaboration - We foster strong partnerships, working together to achieve
-                                                mutual success.
-                                            </li>
-                                            <li>
-                                                Responsiveness - We are responsive to the needs of our clients, providing
-                                                timely
-                                                solutions and support.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!--/.inner-tbs-success-->
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--fun fact start-->
-    <div class="fun-fact-sec px-120" hidden>
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-12">
-                    <div class="fun-fact-wraps-v2">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="singl-fact-count  v2" data-aos="fade-in" data-aos-delay="100">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <div class="icon">
-                                                <img src="{{ asset('assets/img/icons/fun1.1.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="counter">1500 +</h2>
-                                            <p>Our Experience</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-3">
-                                <div class="singl-fact-count  v2" data-aos="fade-in" data-aos-delay="200">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <div class="icon">
-                                                <img src="{{ asset('assets/img/icons/fun1.2.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="counter">150 +</h2>
-                                            <p>Sending Workers</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-3">
-                                <div class="singl-fact-count  v2" data-aos="fade-in" data-aos-delay="300">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <div class="icon">
-                                                <img src="{{ asset('assets/img/icons/fun1.3.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="counter">35 +</h2>
-                                            <p>Sending Countries</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-3">
-                                <div class="singl-fact-count  v2" data-aos="fade-in" data-aos-delay="400">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <div class="icon">
-                                                <img src="{{ asset('assets/img/icons/fun1.4.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="counter">120 +</h2>
-                                            <p>Students</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/.container-->
-    </div>
-    <!--fun fact end-->
+    <br>
+    <br>
+    <br>
 @endsection

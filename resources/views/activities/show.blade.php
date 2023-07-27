@@ -39,7 +39,7 @@
                         @endphp
                         @foreach ($images as $image)
                             <div class="col-3 col-sm-3 col-sm-12 col-md-3">
-                                <div class="product-default" style="background-color: #FE0000;">
+                                <div class="product-default" style="background-color: #003201;">
                                     <figure>
                                         <a href="javascript::void(0)">
                                             <img data-enlargeable="" src="{{ $image }}" alt=""
@@ -54,7 +54,7 @@
                                     </figure>
 
                                     <div class="product-details">
-                                        <h3 class="product-title text-black">
+                                        <h3 class="product-title text-white">
                                             {{ $activity->title ?? '' }}
                                         </h3>
                                         <div class="category-wrap">

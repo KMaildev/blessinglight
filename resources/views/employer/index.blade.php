@@ -60,7 +60,6 @@
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">
                                                 Post a job
-
                                             </font>
                                         </font>
                                         <span style="color:#f7931E;">
