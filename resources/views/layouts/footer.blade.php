@@ -18,7 +18,8 @@
                             </li>
                             <li>
                                 <span class="contact-info-label">
-                                    Phone:</span>
+                                    Phone:
+                                </span>
                                 <a href="tel:09 789 755 722">
                                     09 789 755 722
                                 </a>
@@ -40,7 +41,7 @@
                             <li>
                                 <span class="contact-info-label">
                                     Working Days/Hours:</span>
-                                Mon - Sun / 9:00AM - 8:00PM
+                                    Mon - Sun / 9:00AM - 8:00PM
                             </li>
                         </ul>
                         <div class="social-icons">

@@ -93,29 +93,24 @@
             'dots': true,
             'nav': false
         }">
+
+            <div class="home-slide home-slide2 banner banner-md-vw banner-sm-vw d-flex align-items-center">
+                <img class="slide-bg" style="background-color: #dadada;" src="{{ asset('data/slider3.png') }}"
+                    width="835" height="415" alt="slider image">
+            </div>
+
+
             <div class="home-slide home-slide1 banner banner-md-vw banner-sm-vw d-flex align-items-center">
                 <img style="width: 100%; height: auto; background-size: center; object-fit: cover;" class="slide-bg"
-                    style="background-color: #71b5da;"
-                    src="{{ asset('data/slider.png') }}"
-                    alt="slider image">
+                    style="background-color: #71b5da;" src="{{ asset('data/slider.png') }}" alt="slider image">
             </div>
 
             <div class="home-slide home-slide2 banner banner-md-vw banner-sm-vw d-flex align-items-center">
-                <img class="slide-bg" style="background-color: #dadada;"
-                    src="assets/images/demoes/demo2/slider/slide-2.jpg" width="835" height="415"
-                    alt="slider image">
-                <div class="banner-layer text-uppercase">
-                    <h4>Over 200 products with discounts</h4>
-                    <h2>Great Deals</h2>
-                    <h5 class="d-inline-block mb-0 align-top mr-4 pr-3">Starting At
-                        <b>$<em>299</em>99</b>
-                    </h5>
-
-                    <a href="demo2-shop.html" class="btn btn-dark ls-10">Get Yours!</a>
-                </div>
-                <!-- End .banner-layer -->
+                <img class="slide-bg" style="background-color: #dadada;" src="{{ asset('data/slider2.png') }}"
+                    width="835" height="415" alt="slider image">
             </div>
-
         </div>
+
     </div>
+</div>
 </div>

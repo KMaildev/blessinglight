@@ -1,8 +1,5 @@
 @extends('layouts.main')
 @section('content')
- 
-
-
     <div class="container py-5">
         <div class="row align-items-center">
 
@@ -70,14 +67,15 @@
                     }
 
                     th,
+                    tr,
                     td {
                         border: 1px solid black;
                     }
                 </style>
-                <table class="table animate__animated animate__lightSpeedInRight">
+                <table style='border: 2px solid black' class="table animate__animated animate__lightSpeedInRight">
                     <tbody>
                         <tr>
-                            <td style="color:black; background-color:#003201; color: white; width: 20%;">
+                            <td style="color:black; background-color:#003201; color: white; width: 25%;">
                                 Name of Company
                             </td>
 
@@ -102,7 +100,7 @@
                             </td>
 
                             <td style="color:black;">
-                                - Local Myanmar
+                                Local Myanmar
                             </td>
                         </tr>
 
@@ -132,7 +130,7 @@
                             </td>
 
                             <td style="color:black;">
-                                - Ministry of Labor in Myanmar
+                                Ministry of Labor in Myanmar
                             </td>
                         </tr>
 
@@ -189,11 +187,11 @@
     </div>
 
     <section
-        class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5 table animate__animated animate__lightSpeedInRight">
+        class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5 animate__animated animate__lightSpeedInRight">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-title ">
+                    <div class="">
                         <h3 style="color:#00CE55;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
@@ -211,16 +209,14 @@
                             </span>
                         </h3>
 
-                        <div class="title-desc">
-                            <p style="text-align: justify; font-size: 15px; color: black;">
-                                Choose us for your overseas employment needs and embark on a rewarding international career
-                                journey. Our agency offers a wealth of experience and expertise, ensuring smooth transitions
-                                and successful placements. With a wide range of job options across various sectors and
-                                countries, personalized support, and a commitment to excellence, we prioritize your success
-                                and build lasting relationships with our clients. Trust us to make your overseas job
-                                aspirations a reality.
-                            </p>
-                        </div>
+                        <p style="text-align: justify; font-size: 15px; color: black;">
+                            Choose us for your overseas employment needs and embark on a rewarding international career
+                            journey. Our agency offers a wealth of experience and expertise, ensuring smooth transitions
+                            and successful placements. With a wide range of job options across various sectors and
+                            countries, personalized support, and a commitment to excellence, we prioritize your success
+                            and build lasting relationships with our clients. Trust us to make your overseas job
+                            aspirations a reality.
+                        </p>
                     </div>
                 </div>
 
@@ -298,22 +294,22 @@
                 </div>
                 <style>
                     /* .feature-box-simple1 {
-                                            padding: 10px;
-                                            background: rgb(226, 56, 18);
-                                            background: linear-gradient(315deg, rgba(226, 56, 18, 1) 0%, rgba(15, 68, 213, 0.31976540616246496) 49%, rgba(19, 38, 235, 1) 100%);
-                                        }
+                                                        padding: 10px;
+                                                        background: rgb(226, 56, 18);
+                                                        background: linear-gradient(315deg, rgba(226, 56, 18, 1) 0%, rgba(15, 68, 213, 0.31976540616246496) 49%, rgba(19, 38, 235, 1) 100%);
+                                                    }
 
-                                        .feature-box-simple2 {
-                                            padding: 10px;
-                                            background: rgb(34, 193, 195);
-                                            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(73, 167, 170, 1) 0%, rgba(222, 108, 8, 1) 100%);
-                                        }
+                                                    .feature-box-simple2 {
+                                                        padding: 10px;
+                                                        background: rgb(34, 193, 195);
+                                                        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(73, 167, 170, 1) 0%, rgba(222, 108, 8, 1) 100%);
+                                                    }
 
-                                        .feature-box-simple3 {
-                                            padding: 10px;
-                                            background: rgb(148, 136, 27);
-                                            background: linear-gradient(90deg, rgba(148, 136, 27, 1) 0%, rgba(27, 148, 47, 1) 52%, rgba(2, 21, 71, 1) 100%, rgba(253, 29, 29, 1) 100%);
-                                        } */
+                                                    .feature-box-simple3 {
+                                                        padding: 10px;
+                                                        background: rgb(148, 136, 27);
+                                                        background: linear-gradient(90deg, rgba(148, 136, 27, 1) 0%, rgba(27, 148, 47, 1) 52%, rgba(2, 21, 71, 1) 100%, rgba(253, 29, 29, 1) 100%);
+                                                    } */
                 </style>
                 <div class="col-md-4">
                     <div class="feature-box px-sm-5 feature-box-simple text-center feature-box-simple1">
@@ -391,7 +387,6 @@
         </div>
     </section>
 
-
     <section class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5">
         <div class="container">
             <div class="row">
@@ -446,9 +441,16 @@
                     </div>
                 </div>
 
+
             </div>
         </div>
     </section>
+
+
+
+
+
+
 
 
 
