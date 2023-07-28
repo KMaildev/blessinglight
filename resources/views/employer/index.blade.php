@@ -20,6 +20,7 @@
     <div class="page-content">
         <div class="container">
             <div class="row">
+                {{-- 
                 <div class="col-xl-4 col-lg-4 col-sm-4 py-5">
                     <iframe width="100%" height="250" src="https://www.youtube.com/embed/aIQvj-l5W2s"
                         title="YouTube video player" frameborder="0"
@@ -47,9 +48,64 @@
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
+                </div> --}}
+
+                <div class="col-xl-4 col-lg-4 col-sm-4 py-5">
+                    <h2 class="section-title categories-section-title heading-border border-0 ls-0 appear-animate"
+                        data-animation-delay="100" data-animation-name="fadeInUpShorter">
+                        Employer Form
+                    </h2>
+                    <center>
+                        <p style="font-size: 15px; color: black;" class="appear-animate" data-animation-delay="100"
+                            data-animation-name="fadeInUpShorter">
+                            Post a job and hire talent worker
+                        </p>
+                    </center>
+                    <br>
+
+                    <h4 class="animate__animated animate__bounce animate__rotateInDownLeft">
+                        Blessing Light Services Co.,Ltd
+                    </h4>
+
+                    <p style="font-size: 15px; color: black; text-align: justify" class="appear-animate"
+                        data-animation-delay="100" data-animation-name="fadeInUpShorter">
+                        A leading Manpower Recruiting Agency based in Myanmar, licensed and authorized by the
+                        Ministry of Labor, Employment and Social Security of Myanmar.
+                    </p>
+
+
+                    <h4 class="animate__animated animate__bounce animate__rotateInDownLeft">
+                        Our Expertise
+                    </h4>
+
+                    <p style="font-size: 15px; color: black; text-align: justify" class="appear-animate"
+                        data-animation-delay="100" data-animation-name="fadeInUpShorter">
+                        Our expertise stands on the Thailand, Malaysia, Singapore, Japan and Middle East Countries job
+                        market.
+                    </p>
+
+
+                    <h4 class="animate__animated animate__bounce animate__rotateInDownLeft">
+                        Our Operations
+                    </h4>
+
+                    <p style="font-size: 15px; color: black; text-align: justify" class="appear-animate"
+                        data-animation-delay="100" data-animation-name="fadeInUpShorter">
+                        Blessing Light Service’s operations are managed by a team of professionals.
+                    </p>
+
+
+                    <h4 class="animate__animated animate__bounce animate__rotateInDownLeft">
+                        Our Experience
+                    </h4>
+
+                    <p style="font-size: 15px; color: black; text-align: justify" class="appear-animate"
+                        data-animation-delay="100" data-animation-name="fadeInUpShorter">
+                        We could provide different level of employees on our client’s demand in various job categories
+                    </p>
                 </div>
 
-                <div class="col-xl-8 col-lg-8 col-sm-8 py-5">
+                <div class="col-xl-8 col-lg-8 col-sm-8 py-5 animate__animated animate__bounce animate__fadeInDown">
                     <div class="contact-form" style="background-color: #a0dea7; padding: 20px;">
                         <div class="column mcb-column mcb-item-04q251sx2 one column_column">
                             <div class="column_attr clearfix align_center animate fadeInUp" data-anim-type="fadeInUp"
@@ -77,7 +133,7 @@
                         <form autocomplete="off" method="POST" action="{{ route('employer.store') }}" id="create-form">
                             @csrf
                             <div class="row">
-                                <div class="col-md-12 mb-3">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Name</label>
                                         <input autocomplete="off" type="text"
@@ -92,7 +148,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Type of Company</label>
                                         <input autocomplete="off" type="text"
@@ -107,7 +163,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Email Address</label>
                                         <input type="email" class="form-control @error('email') is-invalid @enderror"
@@ -120,13 +176,12 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Phone Number</label>
                                         <input autocomplete="off" type="text"
                                             class="form-control @error('phone') is-invalid @enderror"
-                                            placeholder="Company Phone Number" name="phone"
-                                            value="{{ old('phone') }}">
+                                            placeholder="Company Phone Number" name="phone" value="{{ old('phone') }}">
                                         @error('phone')
                                             <div class="help-block with-errors text-danger">
                                                 {{ $message }}
@@ -135,7 +190,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Website</label>
                                         <input autocomplete="off" type="text"
@@ -149,7 +204,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12 mb-3">
+                                <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Company Location</label>
                                         <input autocomplete="off" type="text"
@@ -164,7 +219,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Job Category</label>
                                         <input autocomplete="off" type="text"
@@ -179,7 +234,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6 mb-3">
+                                <div class="col-xl-6 col-md-6 col-sm-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Age Limit: 20-40</label>
                                         <input autocomplete="off" type="text"
@@ -195,7 +250,7 @@
                                 </div>
 
 
-                                <div class="col-xl-12 col-md-12 col-lg-12 col-sm-12 mb-3">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Educational
                                             Requirement</label>
@@ -209,7 +264,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-3">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">
                                             Working Experience Requirement
@@ -224,7 +279,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 mb-3">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Other Additional
                                             Requirement</label>
@@ -238,7 +293,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
+                                <div class="col-xl-3 col-md-3 col-lg-3 col-sm-12">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Estimate Salary Offer</label>
                                         <input autocomplete="off" type="text"
@@ -254,7 +309,7 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
+                                <div class="col-xl-3 col-md-3 col-lg-3 col-sm-12">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Other Allowance</label>
                                         <input autocomplete="off" type="text"
@@ -270,14 +325,14 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
+                                <div class="col-xl-3 col-md-3 col-lg-3 col-sm-12">
                                     <div class="form-group">
-                                        <label for="nameInput" class="form-label">Gender: Male = 10, Female =
-                                            5</label>
+                                        <label for="nameInput" class="form-label">
+                                            Gender: M/10, F/10
+                                        </label>
                                         <input autocomplete="off" type="text"
                                             class="form-control @error('gender') is-invalid @enderror"
-                                            placeholder="Gender: Male = 10, Female = 5" name="gender"
-                                            value="{{ old('gender') }}">
+                                            placeholder="Gender: M/10, F/10" name="gender" value="{{ old('gender') }}">
                                         @error('gender')
                                             <div class="help-block with-errors text-danger">
                                                 {{ $message }}
@@ -287,7 +342,7 @@
                                 </div>
 
 
-                                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12 mb-3">
+                                <div class="col-xl-3 col-md-3 col-lg-3 col-sm-12">
                                     <div class="form-group">
                                         <label for="nameInput" class="form-label">Interview Type</label>
                                         <input autocomplete="off" type="text"

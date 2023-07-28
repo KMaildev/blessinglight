@@ -1,8 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Contact Us')
 @section('content')
-    <nav aria-label="breadcrumb" class="breadcrumb-nav"
-        style="padding-left: 10px; padding-right: 10px;">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="padding-left: 10px; padding-right: 10px;">
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -99,8 +98,8 @@
                 </p>
                 <style>
                     .contact-box {
-                        background: rgb(69, 180, 58);
-                        background: linear-gradient(90deg, rgba(69, 180, 58, 1) 0%, rgba(139, 76, 47, 1) 51%, rgba(253, 29, 29, 1) 100%, rgba(230, 211, 36, 1) 100%);
+                        background: rgb(34, 193, 195);
+                        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(2, 10, 0, 1) 0%, rgba(22, 172, 55, 1) 100%);
                     }
                 </style>
                 <div class="col-sm-12 col-lg-12 contact-box py-5"

@@ -21,7 +21,7 @@
     </nav>
 
 
-    <div class="container py-5">
+    <div class="container py-5 animate__animated animate__bounce animate__fadeInDown">
         <section class="left-section">
             <div class="row">
                 <style>
@@ -85,13 +85,13 @@
         </section>
     </div>
 
-    <div class="container contact-us-container">
+    <div class="container contact-us-container animate__animated animate__bounce animate__fadeInDown">
         <div class="row">
-            <div class="col-lg-8" style="background-color: #063F0D; padding: 20px;">
-                <h2 class="text-white">
+            <div class="col-lg-8" style="background-color: #e7f0e7; padding: 20px;">
+                <h2 class="text-black">
                     Apply Now
                 </h2>
-                <p class="p-b-3" style="font-size: 15px; text-align: justify; color: white;">
+                <p class="p-b-3" style="font-size: 15px; text-align: justify; color: black;">
                     To apply for the desired job, we recommend reading the job requirements
                     carefuly then if you found yourself qualified for it, simply fill in the below form and
                     click APPLY NOW.
@@ -100,30 +100,47 @@
                     id="create-form" autocomplete="off">
                     @csrf
 
+                    <style>
+                        input[type=text] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            box-sizing: border-box;
+                            border: 1px solid black;
+                            -webkit-transition: 0.5s;
+                            transition: 0.5s;
+                            outline: none;
+                        }
+
+                        input[type=text]:focus {
+                            border: 1px solid black;
+                        }
+                    </style>
+
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="form-group">
-                            <label class="text-white">Name*</label>
+                            <label class="text-black" style="color: black;">Name*</label>
                             <input type="text" name="name" class="form-control " value="">
                         </div>
                     </div>
 
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="form-group">
-                            <label class="text-white">Phone</label>
+                            <label class="text-black" style="color: black;">Phone</label>
                             <input type="text" name="phone" class="form-control " value="">
                         </div>
                     </div>
 
                     <div class="col-lg-12 py-3">
                         <div class="form-group">
-                            <label class="text-white">Additional Note</label>
-                            <textarea class="form-control" rows="5" name="additional_note"></textarea>
+                            <label class="text-black" style="color: black;">Additional Note</label>
+                            <input type="text" name="additional_note" class="form-control " value="">
                         </div>
                     </div>
 
                     <div class="col-lg-12 py-3">
                         <div class="form-group">
-                            <label for="img" class="text-white">
+                            <label for="img" style="color: black;">
                                 Select your CV to upload
                             </label>
                             <br>
@@ -133,7 +150,9 @@
                     </div>
 
                     <div>
-                        <input type="submit" class="btn btn-block btn-lg main-bg uppercase" value="Apply Now">
+                        <button type="submit" class="btn btn-dark font-weight-normal">
+                            Apply Now
+                        </button>
                     </div>
                 </form>
             </div>

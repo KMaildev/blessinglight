@@ -8,9 +8,13 @@
     <title>
         Blessing Light Services Co.,Ltd （Overseas Employment Agency） - @yield('title')
     </title>
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Bootstrap eCommerce Template">
-    <meta name="author" content="SW-THEMES">
+    <meta name="keywords" content="Blessing Light Services Co.,Ltd" />
+    <meta name="author" content="Blessing Light Services Co.,Ltd" />
+    <meta name="robots" content="Blessing Light Services Co.,Ltd" />
+    <meta name="description" content="Blessing Light Services Co.,Ltd" />
+    <link rel="shortcut icon" href="{{ asset('data/logo.png') }}" />
+
+
     <script>
         WebFontConfig = {
             google: {
@@ -29,12 +33,30 @@
     </script>
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/demo2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}"> --}}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <style>
     .breadcrumb-nav {
         background: rgb(69, 180, 58);
         background: linear-gradient(90deg, rgba(69, 180, 58, 1) 0%, rgba(200, 91, 40, 1) 47%, rgba(253, 29, 29, 1) 100%, rgba(230, 101, 36, 1) 100%);
+    }
+
+
+    /* Rotate */
+    .hover06 figure img {
+        -webkit-transform: rotate(15deg) scale(1.4);
+        transform: rotate(15deg) scale(1.4);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .hover06 figure:hover img {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
     }
 </style>
 
@@ -44,6 +66,12 @@
         <main class="main home">
             <div class="container mt-2">
                 @if (URL::current() == route('home'))
+                    <marquee>
+                        <span style="color: black; font-size: 16px; font-weight: bold;">
+                            "Blessing Light Services Co.,Ltd." always welcome for your manpower needs and "Blessing
+                            Light Services Co.,Ltd." will provide our best services as your reliable agency.
+                        </span>
+                    </marquee>
                     @include('layouts.slider')
                 @endif
                 @yield('content')

@@ -4,7 +4,8 @@
     <div class="container py-4">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-lg-12 col-sm-12">
-                <div class="sec-title text-center breadcrumb-nav" style="height: 300px;">
+                <div class="sec-title text-center breadcrumb-nav animate__animated animate__bounce animate__fadeInLeft"
+                    style="height: auto;">
                     <br><br>
                     <h3 class="text-white">
                         Gallery & Activities
@@ -12,17 +13,18 @@
                     <h1 class="text-white">
                         Checkout our photo gallery
                     </h1>
-
-                    <p style="text-align: justify; font-size: 16px; color: white; margin: 20px;">
-                        Our gallery showcases a vibrant collection of photographs and testimonials from individuals who
-                        have successfully found employment through our agency. These visuals depict diverse work
-                        environments, cultural experiences, and personal growth opportunities that await those who
-                        embark on their overseas employment journey with us. From bustling cityscapes to breathtaking
-                        natural landscapes, our gallery captures the essence of working abroad and inspires our clients
-                        to explore new horizons.
-                    </p>
-                    <br>
                 </div>
+
+                <p class="animate__animated animate__bounce animate__backInUp"
+                    style="text-align: justify; font-size: 16px; color: black;">
+                    Our gallery showcases a vibrant collection of photographs and testimonials from individuals who
+                    have successfully found employment through our agency. These visuals depict diverse work
+                    environments, cultural experiences, and personal growth opportunities that await those who
+                    embark on their overseas employment journey with us. From bustling cityscapes to breathtaking
+                    natural landscapes, our gallery captures the essence of working abroad and inspires our clients
+                    to explore new horizons.
+                </p>
+
 
                 <div class="row py-5">
                     @foreach ($activities as $activity)
@@ -38,7 +40,8 @@
                             $images = explode(',', $activity->images);
                         @endphp
                         @foreach ($images as $image)
-                            <div class="col-3 col-sm-3 col-sm-12 col-md-3">
+                            <div
+                                class="hover06 col-3 col-sm-3 col-sm-12 col-md-3 animate__animated animate__bounce animate__fadeInLeft">
                                 <div class="product-default" style="background-color: #003201;">
                                     <figure>
                                         <a href="javascript::void(0)">

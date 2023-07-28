@@ -1,15 +1,17 @@
 @extends('layouts.main')
 @section('content')
+ 
 
-    <div class="container">
+
+    <div class="container py-5">
         <div class="row align-items-center">
 
-            <div class="col-md-6">
-                <img style="width: 100%;" src="https://yunnadioocompany.com/data/about_1.png" data-aos="fade-down"
-                    class="img1" alt="">
+            <div class="col-md-5 animate__animated animate__lightSpeedInRight">
+                <img style="width: 100%; height: 600px; background-size: cotain; object-fit: cover; background-position: center;"
+                    src="{{ asset('data/about.jpg') }}" data-aos="fade-down" class="img1" alt="">
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <h3 style="color:#00CE55;">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">
@@ -30,7 +32,8 @@
                 </h4>
 
 
-                <p style="text-align: justify; font-size: 16px; color: black;">
+                <p style="text-align: justify; font-size: 16px; color: black;"
+                    class="animate__animated animate__lightSpeedInRight">
                     Our company "Blessing Light Services Co.,Ltd." was established in the year 2020 for the manpower supply.
                     Blessing Light Service Co.,Ltd is one of the registered licence companies in Republic of the Union of
                     Myanmar and authorized by the Ministry of the National Planning & Economic Development and Ministry of
@@ -48,9 +51,17 @@
                     "Blessing Light Services Co.,Ltd." always welcome for your manpower needs and "Blessing Light Services
                     Co.,Ltd." will provide our best services as your reliable agency.
                 </p>
+                <br>
+                <a href="{{ route('contact.index') }}" class="btn btn-dark font-weight-normal">
+                    Contact Us
+                </a>
+
+                <a href="{{ route('employer.index') }}" class="btn btn-dark font-weight-normal">
+                    Employers
+                </a>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 py-5">
                 <style>
                     .table {
                         border-collapse: collapse;
@@ -63,7 +74,7 @@
                         border: 1px solid black;
                     }
                 </style>
-                <table class="table">
+                <table class="table animate__animated animate__lightSpeedInRight">
                     <tbody>
                         <tr>
                             <td style="color:black; background-color:#003201; color: white; width: 20%;">
@@ -177,7 +188,8 @@
         </div>
     </div>
 
-    <section class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5">
+    <section
+        class="cmt-row bg-base-dark cmt-bg cmt-bgimage-yes bg-img1 clearfix py-5 table animate__animated animate__lightSpeedInRight">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -285,23 +297,23 @@
                     </center>
                 </div>
                 <style>
-                    .feature-box-simple1 {
-                        padding: 10px;
-                        background: rgb(226, 56, 18);
-                        background: linear-gradient(315deg, rgba(226, 56, 18, 1) 0%, rgba(15, 68, 213, 0.31976540616246496) 49%, rgba(19, 38, 235, 1) 100%);
-                    }
+                    /* .feature-box-simple1 {
+                                            padding: 10px;
+                                            background: rgb(226, 56, 18);
+                                            background: linear-gradient(315deg, rgba(226, 56, 18, 1) 0%, rgba(15, 68, 213, 0.31976540616246496) 49%, rgba(19, 38, 235, 1) 100%);
+                                        }
 
-                    .feature-box-simple2 {
-                        padding: 10px;
-                        background: rgb(34, 193, 195);
-                        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(73, 167, 170, 1) 0%, rgba(222, 108, 8, 1) 100%);
-                    }
+                                        .feature-box-simple2 {
+                                            padding: 10px;
+                                            background: rgb(34, 193, 195);
+                                            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(73, 167, 170, 1) 0%, rgba(222, 108, 8, 1) 100%);
+                                        }
 
-                    .feature-box-simple3 {
-                        padding: 10px;
-                        background: rgb(148, 136, 27);
-                        background: linear-gradient(90deg, rgba(148, 136, 27, 1) 0%, rgba(27, 148, 47, 1) 52%, rgba(2, 21, 71, 1) 100%, rgba(253, 29, 29, 1) 100%);
-                    }
+                                        .feature-box-simple3 {
+                                            padding: 10px;
+                                            background: rgb(148, 136, 27);
+                                            background: linear-gradient(90deg, rgba(148, 136, 27, 1) 0%, rgba(27, 148, 47, 1) 52%, rgba(2, 21, 71, 1) 100%, rgba(253, 29, 29, 1) 100%);
+                                        } */
                 </style>
                 <div class="col-md-4">
                     <div class="feature-box px-sm-5 feature-box-simple text-center feature-box-simple1">
@@ -385,48 +397,209 @@
             <div class="row">
 
                 <div class="col-lg-6">
-                    <div class="section-title ">
-                        <h3 style="color:#00CE55;">
+                    <h3 style="color:#00CE55;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                Company
+                            </font>
+                        </font>
+                        <span style="color:#f7931E;">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
-                                    Company
+                                    Organizational Chart
                                 </font>
                             </font>
-                            <span style="color:#f7931E;">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">
-                                        Organizational Chart
-                                    </font>
-                                </font>
-                            </span>
-                        </h3>
+                        </span>
+                    </h3>
 
-                        <div class="title-desc">
-                            <p style="text-align: justify; font-size: 15px; color: black;">
-                                Our overseas employment agency consists of a skilled team dedicated to connecting talented
-                                individuals with international job opportunities. We have a deep understanding of global
-                                markets, immigration laws, and visa processes. Our extensive network of contacts allows us
-                                to offer a wide range of employment opportunities in various sectors. We prioritize
-                                transparency, ethical practices, and open communication, providing personalized guidance and
-                                support to job seekers. Our commitment to excellence ensures successful placements and
-                                long-term relationships with clients.
-                            </p>
-                        </div>
+                    <div class="title-desc">
+                        <p style="text-align: justify; font-size: 16px; color: black; line-height: 2.5;">
+                            Our overseas employment agency consists of a skilled team dedicated to connecting talented
+                            individuals with international job opportunities. We have a deep understanding of global
+                            markets, immigration laws, and visa processes. Our extensive network of contacts allows us
+                            to offer a wide range of employment opportunities in various sectors. We prioritize
+                            transparency, ethical practices, and open communication, providing personalized guidance and
+                            support to job seekers. Our commitment to excellence ensures successful placements and
+                            long-term relationships with clients.
+                        </p>
+                    </div>
+
+                    <h4><b>Our Purpose</b></h4>
+                    <div class="title-desc">
+                        <p style="text-align: justify; font-size: 16px; color: black; line-height: 2.5;">
+                            Our main purpose is to provide different categories of
+                            Myanmar Manpower around the globe and
+                            especially
+                            Thailand. We supply Skilled, Semi-Skilled, General Worker, Technical, Professional and
+                            Unskilled Myanmar
+                            Manpower. Currently, we are dealing with various clients from different countries and
+                            successful in supply
+                            Malaysia, Japan, Thailand, Singapore without any complaints.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding: 14px;">
                     <div class="p-a30 m-b30 radius-sm bg-gray clearfix">
-                        <img src="https://hkkservices.com/data/org.png" alt="" data-enlargeable=""
-                            style="object-position: top; width: 100%; height: 340px; object-fit: cover; background-size: corver; border: 2px solid #555;"
+                        <img src="{{ asset('data/org.jpg') }}" alt="" data-enlargeable=""
+                            style="object-position: top; width: 100%; height: auto; object-fit: cover; background-size: corver; border: 2px solid #555;"
                             class="img-enlargeable">
                     </div>
                 </div>
-
 
             </div>
         </div>
     </section>
 
 
+
+
+
+
+
+    <div class="container py-4 animate__animated animate__lightSpeedInRight">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-lg-12 col-sm-12">
+                <div class="sec-title text-center " style="height: 300px;">
+                    <br><br>
+                    <h3 class="text-black">
+                        Team Member
+                    </h3>
+                    <h1 class="text-black">
+                        Creative Team Member
+                    </h1>
+
+                    <p class="animate__animated animate__lightSpeedInRight"
+                        style="text-align: justify; font-size: 16px; color: black; margin: 20px;">
+                        Our overseas employment agency consists of a skilled team dedicated to connecting talented
+                        individuals with international job opportunities. We have a deep understanding of global
+                        markets,
+                        immigration laws, and visa processes. Our extensive network of contacts allows us to offer a
+                        wide
+                        range of employment opportunities in various sectors. We prioritize transparency, ethical
+                        practices,
+                        and open communication, providing personalized guidance and support to job seekers. Our
+                        commitment
+                        to excellence ensures successful placements and long-term relationships with clients.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="row py-5 animate__animated animate__lightSpeedInRight">
+                    @foreach ($teams as $team)
+                        <div class="col-md-6 col-lg-3 animate__animated animate__lightSpeedInRight">
+                            <div class="team-member-inner v3" data-aos="flip-left" data-aos-delay="100">
+                                <div class="imgs">
+                                    <img src="{{ $team->photo }}" alt="#"
+                                        style="width: 100%; height: 230px; background-size: center; object-fit: cover;">
+                                </div>
+
+                                <div class="product-details" style="background-color: #003201; padding: 7px;">
+                                    <p style="text-align: center">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit; font-size: 19px; color: white;">
+                                                {{ $team->position ?? '' }}
+                                            </font>
+                                        </font>
+                                        <br>
+                                        <span style="color:#f7931E;">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    {{ $team->name ?? '' }}
+                                                </font>
+                                            </font>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-lg-12 col-sm-12">
+                <div class="sec-title text-center breadcrumb-nav animate__animated animate__bounce animate__fadeInLeft"
+                    style="height: auto;">
+                    <br><br>
+                    <h3 class="text-white">
+                        Gallery & Activities
+                    </h3>
+                    <h1 class="text-white">
+                        Checkout our photo gallery
+                    </h1>
+                </div>
+
+                <p class="animate__animated animate__bounce animate__backInUp"
+                    style="text-align: justify; font-size: 16px; color: black;">
+                    Our gallery showcases a vibrant collection of photographs and testimonials from individuals who
+                    have successfully found employment through our agency. These visuals depict diverse work
+                    environments, cultural experiences, and personal growth opportunities that await those who
+                    embark on their overseas employment journey with us. From bustling cityscapes to breathtaking
+                    natural landscapes, our gallery captures the essence of working abroad and inspires our clients
+                    to explore new horizons.
+                </p>
+
+
+                <div class="row py-5">
+                    @foreach ($activities as $activity)
+                        <div class="col-md-12">
+                            <h5 style="font-size: 16px;">
+                                {{ $activity->title ?? '' }}
+                            </h5>
+                            <p style="color: black;">
+                                {!! $activity->description ?? '' !!}
+                            </p>
+                        </div>
+                        @php
+                            $images = explode(',', $activity->images);
+                        @endphp
+                        @foreach ($images as $image)
+                            <div
+                                class="hover06 col-3 col-sm-3 col-sm-12 col-md-3 animate__animated animate__bounce animate__fadeInLeft">
+                                <div class="product-default" style="background-color: #003201;">
+                                    <figure>
+                                        <a href="javascript::void(0)">
+                                            <img data-enlargeable="" src="{{ $image }}" alt=""
+                                                style="width: 100%; height: 260px; background-size: center; object-fit: cover;"
+                                                class="img-enlargeable">
+                                        </a>
+                                        <div class="label-group">
+                                            <div class="product-label label-hot">
+                                                BSL
+                                            </div>
+                                        </div>
+                                    </figure>
+
+                                    <div class="product-details">
+                                        <h3 class="product-title text-white">
+                                            {{ $activity->title ?? '' }}
+                                        </h3>
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="javascript::void(0)" class="product-category text-white">
+                                                    {{ $category->title ?? '' }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                        <hr style="border-top: 1px dashed #d6a40f;">
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

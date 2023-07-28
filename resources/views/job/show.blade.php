@@ -27,9 +27,8 @@
         </div>
     </div>
 
-    <section class="new-products-section">
+    <section class="new-products-section animate__animated animate__bounce">
         <div class="container">
-
             <h2 class="section-title categories-section-title heading-border border-0 ls-0 appear-animate"
                 data-animation-delay="100" data-animation-name="fadeInUpShorter">
                 Our Sending Countries
@@ -65,6 +64,7 @@
             </div>
         </div>
     </section>
+
     <div class="container py-3">
         <div class="row">
             <style>
@@ -73,26 +73,26 @@
                     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
                 }
             </style>
-            <div class="col-lg-12 col-md-12 col-lg-12 col-sm-12">
-                <div class="sec-title text-center service-box" style="height: 230px;">
-                    <br><br>
-                    <h1 class="text-white">
+
+
+            <div class="col-lg-12 col-md-12 col-lg-12 col-sm-12 animate__animated animate__bounce">
+                <div class="sec-title text-center " style="height: auto;">
+                    <h1 class="text-black">
                         Our Services
                     </h1>
 
-                    <p style="text-align: justify; font-size: 16px; color: white; margin: 20px;">
+                    <p style="text-align: justify; font-size: 16px; color: black;">
                         Blessing Light Services Co.,Ltd is a leading international employment agency specializing in
                         connecting employers
                         from all over the world with the best and most qualified candidates. With a wide network of
                         recruitment professionals, our team is dedicated to matching employers with the ideal candidates to
                         help your business succeed.
                     </p>
-                    <br>
                 </div>
             </div>
 
 
-            <div class="row py-5">
+            <div class="row py-5 animate__animated animate__bounce">
                 @foreach ($jobs as $job)
                     <div class="col-3 col-sm-3 col-sm-12 col-md-3">
                         <div class="product-default" style="background-color: #003201;">
